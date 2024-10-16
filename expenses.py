@@ -19,6 +19,9 @@ def main():
         if choice == "1":
             description = input("Enter expense description: ")
             amount = input("Enter amount: ")
+            if not amount.isdigit():
+               print("Invalid amount. Please enter a number.")
+               continue
             add_expense(description, amount)
         elif choice == "2":
             list_expenses()
