@@ -1,8 +1,8 @@
 # expenses.py
 expenses = []
 
-def add_expense(description, amount):
-    expense = {"description": description, "amount": amount}
+def add_expense(description, amount, category):
+    expense = {"description": description, "amount": amount,"category": category}
     expenses.append(expense)
 
 def list_expenses():
